@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0.4vw 5vw;
-    border-bottom: 0.3vw solid rgb(43, 36, 118);
+    border-bottom: 0.4vw solid rgb(78, 71, 155);
     position: sticky;
     top: 0px;
     z-index: 100;
@@ -83,7 +83,7 @@ header {
     background-image: url(../images/header-img.png);
     background-position: center;
     background-size: cover;
-    border-bottom: 0.3vw solid rgb(43, 36, 118);
+    border-bottom: 0.4vw solid rgb(78, 71, 155);
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -138,7 +138,6 @@ h1 {
 header p {
     width: 60vw;
     margin: 0 0 3vw 0;
-
 }
 
 header a {
@@ -155,7 +154,7 @@ header a {
 header a:hover {
     transition: 0.15s ease-in-out;
     background-color: white;
-    color: rgb(26, 27, 36);
+    color: black;
     box-shadow: 0 0 1vw rgb(255, 255, 255);
     transform: scale(1.065);
 }
@@ -164,7 +163,6 @@ header a:hover {
     margin: 0;
     padding: 0;
     opacity: 0;
-    transform: translateY(275%);
 }
 
 @keyframes nav-links-anim {
@@ -305,7 +303,6 @@ header a:hover {
 
 #best-builds {
     display: flex;
-    align-items: stretch;
     justify-content: center;
     gap: 4vw;
     max-width: 95vw;
@@ -322,8 +319,8 @@ article {
     color: white;
     max-height: 100%;
     filter: brightness(0.85);
-    box-shadow: 0 0 1.5vw rgb(0, 0, 0),
-        0 0 2vw rgb(81, 76, 162);
+    box-shadow: 0 0 0.7vw rgb(0, 0, 0),
+        0 0 1.5vw rgb(23, 22, 40);
 }
 
 article h3 {
@@ -376,8 +373,9 @@ article:hover {
     transition: 0.2s ease-in-out;
     box-shadow: 0 0 2vw rgb(164, 197, 255),
         0 0 2.5vw rgb(51, 76, 176);
-    filter: brightness(1.1);
     text-shadow: 0 0 0.15vw rgb(255, 255, 255);
+    filter: brightness(1.1);
+
 }
 
 article a {
@@ -403,7 +401,6 @@ article a:hover {
     margin: 0;
     padding: 0;
     opacity: 0;
-    transform: translateY(275%);
 }
 
 
@@ -412,6 +409,9 @@ article a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 0.4vw solid rgb(78, 71, 155);
+    padding-bottom: 9vw;
+    background-color: rgb(194, 194, 241);
 }
 
 form {
@@ -419,15 +419,16 @@ form {
     column-gap: 5%;
     grid-template-columns: 50% 50%;
     justify-content: center;
-    /* margin: 0vw 30vw; */
     width: 600px;
-    padding: 2vw 2vw;
+    padding: 1vw 2vw;
     background-color: rgb(38, 43, 74);
     color: white;
     border: 0.4vw solid rgb(74, 79, 115);
     border-radius: 0.8vw;
     scale: 1.15;
     transform: translateY(7%);
+    box-shadow: 0 0 0.7vw rgb(0, 0, 0),
+        0 0 1.5vw rgb(23, 22, 40);
 }
 
 .wide-item {
@@ -445,6 +446,30 @@ form {
     flex-direction: column;
 }
 
+form button {
+    display: flex;
+    padding: 0.4vw 8vw;
+    margin: 1.1vw 0 0;
+    font-size: 1.4rem;
+    font-family: Orbitron;
+    max-width: 50%;
+    align-self: center;
+    justify-content: center;
+    border-radius: 0.4vw;
+    color: white;
+    background-color: rgb(38, 43, 74);
+    border: 0.2vw solid rgb(74, 79, 115);
+    transition: 0.15s ease-in-out
+}
+
+form button:hover {
+    transition: 0.1s ease-in-out;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 0.75vw rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
 input,
 textarea,
 select {
@@ -454,4 +479,55 @@ select {
     margin: 0.3vw 0 1.1vw;
     font-family: Orbitron;
     font-size: 1.1rem;
+    outline: none;
+    transition: 0.15s ease-in-out;
+}
+
+textarea {
+    transition: none;
+    min-width: 96.5%;
+    max-width: 96.5%;
+    min-height: 5vw;
+    max-height: 15vw;
+}
+
+input:valid,
+select:valid {
+    transition: 0.15s ease-in-out;
+    border: 0.3vw solid rgb(163, 170, 219);
+}
+
+input:focus:invalid {
+    transition: 0.15s ease-in-out;
+    border: 0.3vw solid rgb(129, 15, 15);
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(23, 22, 40);
+    color: white;
+}
+
+#footer-left {
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+}
+
+#logo {
+    height: 6rem;
+    filter: invert();
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer img {
+    height: 4rem;
+    object-fit: cover;
 }
