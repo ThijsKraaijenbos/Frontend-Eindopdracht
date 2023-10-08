@@ -113,19 +113,19 @@
             <form>
                 <div class="grid-item">
                     <label for="first-name">First Name *</label>
-                    <input type="text" name="first-name" id="first-name" required>
+                    <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
                 </div>
                 <div class="grid-item">
                     <label for="last-name">Last Name *</label>
-                    <input type="text" name="last-name" id="last-name" required>
+                    <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
                 </div>
                 <div class="grid-item wide-item">
                     <label for="email">Email *</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
                 </div>
                 <div class="grid-item">
                     <label for="city">City *</label>
-                    <input type="text" name="city" id="city" required>
+                    <input type="text" name="city" id="city" placeholder="City" required>
                 </div>
                 <div class="grid-item">
                     <label for="birth-date">Birth Date *</label>
@@ -134,7 +134,7 @@
                 <div class="grid-item wide-item">
                     <label for="subject">Choose Subject *</label>
                     <select id="subject" required>
-                        <option value="" disabled selected>Subject</option>
+                        <option value="" disabled selected>Choose subject</option>
                         <option value="feedback">Feedback</option>
                         <option value="commission-request">Commission Request</option>
                         <option value="question">Questions</option>
@@ -149,7 +149,7 @@
                     <label for="comms-updates">Receive commission update emails? *</label>
                     <div class="row-items">
                         <input type="radio" id="yes" name="comms-updates" value="yes" checked>
-                        <label for="pizza">Yes</label>
+                        <label for="yes">Yes</label>
 
                         <input type="radio" id="no" name="comms-updates" value="no">
                         <label for="no">No</label>
@@ -157,7 +157,7 @@
                 </div>
                 <div class="grid-item wide-item">
                     <div class="row-items">
-                        <input type="checkbox" required>
+                        <input type="checkbox" id="terms-conditions" name="terms-conditions" required>
                         <label for="terms-conditions">I agree to the terms and conditions</label>
                     </div>
                 </div>
